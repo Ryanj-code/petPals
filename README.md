@@ -1,50 +1,53 @@
-# React + TypeScript + Vite
+# petPals
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**petPals** is an interactive web application built with React and TypeScript that allows users to browse, search, filter, and download images of pets. The app features a clean, user-friendly interface with additional functionality such as sorting images, selecting multiple images, and viewing detailed descriptions.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Pet Gallery**: A collection of pet images with descriptions retrieved via a REST API.
+- **Select & Download**: Users can select multiple or all images, clear all images, and download selected images.
+- **Search Functionality**: Able to search for images based on title or description via a search bar.
+- **Sorting Functionality**: Alphabetically sort images both ways (A-Z or Z-A).
+- **About Me Page**: A brief about page introducing the developer and the relevant skills.
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **React** & **TypeScript**: The core technologies used to build a dynamic and scalable user interface.
+- **Styled-Components**: Employed for styling the app, enabling reusable components, and ensuring scalability.
+- **React Router DOM**: Facilitates smooth routing and navigation throughout the application.
+- **Custom Hooks**: Utilized to manage application state and handle data fetching.
+- **Fetch API**: Retrieves pet data from an external API endpoint ([/pets](https://eulerity-hackathon.appspot.com/pets)).
 
-- Configure the top-level `parserOptions` property like this:
+## Key Programming Practices
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- **Component-Based Architecture**: React components are used to modularize the UI, making it reusable and maintaintable
+- **Type Safety**: TypeScript ensures type safety and minimizes runtime errors.
+- **Efficient Data Management**: Custom hooks are employed to handle state and data fetching, ensuring clarity and reusability.
+- **Error Handling**: Provides error handling for issues that might occur.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## How to Run the Project
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+1. Clone the repository:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+   ```bash
+   git clone https://github.com/Ryanj-code/petPals.git
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+### Personal Note
+
+First off, I would like to thank you for considering me and my work.
+
+I enjoyed working on **petPals**, and I’m excited about the opportunity to share my results. This project provided me with a great chance to apply what I've learned in React and TypeScript from my experiences, while also letting me further practice my skills in building great web applications.
+
+And lastly, I believe that my experiences, combined with my passion for learning, would make me a valuable addition to any team.
